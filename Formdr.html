@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{ 
+        padding: 30px;
+       max-width: 560px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        
+        }
+        .inner-main{
+        background-color: lightgray;
+        padding: 30px;
+
+        }
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.name{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+      
+        button{
+            margin-top: 15px;
+            padding: 15px;
+            width:100%;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .dropdown-wrapper{
+            position: relative;
+        }
+
+        .contents 
+         {
+         background-color: gray;
+            padding: 10px;
+            width: 100%;
+            display: none;
+
+        }
+
+.dropdown-wrapper label{
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+.dropdown-wrapper:hover .contents{
+display: block;
+}
+.drop{
+   background-color: green;
+   padding:10px 15px; 
+   width: 100px;
+   cursor: pointer;
+   text-decoration: none;
+}
+.contents :hover{background-color: lightgreen;}
+form{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner-main">
+
+            <form>
+             <label for="name">First Name</label> 
+             <input class="name" type="text" id="name" placeholder="Your name..">
+             <label for="last">Last Name</label>
+             <input class="name" type="text" id="last" placeholder="Your last name..">
+           
+     
+         
+             <label for="country">Country</label>
+                 <select class="name" name="country" id="country" >
+                     <option value="australia" >Australia</option > 
+                     <option value="Ethiopia">Ethiopia</option>
+                     <option value="Eritrea">Eritrea</option>
+                     <option value="canada">Canada</option>
+                 </select>
+         <br/>
+           <button>Submit</button>
+            </form>
+        </div>
+
+       <div class="dropdown-wrapper">
+           
+        
+          <button class="drop">
+           Dropdown
+          </button>
+          <div class="contents">
+           <p>Link1</p>
+           <p>Link2</p>
+           <p>Link3</p>
+          </div>
+       </div>
+       <p>this is dropdown menu</p>
+    </div>
+</body>
+</html>
